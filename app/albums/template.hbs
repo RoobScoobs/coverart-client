@@ -1,3 +1,9 @@
 {{#each model as |album|}}
   <h2>{{album.title}}</h2>
 {{/each}}
+
+{{#link-to 'albums/create'}}
+  <button class="btn btn-default">
+    Create New Album
+  </button>
+{{/link-to}}
