@@ -5,4 +5,5 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   artist: DS.attr('string'),
   user: DS.belongsTo('user'),
+  genre: DS.belongsTo('genre'),
 });
