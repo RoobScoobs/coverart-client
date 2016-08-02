@@ -1,0 +1,10 @@
+{{new-album-title title=album.title}}
+{{new-album-author artist=album.artist}}
+{{new-album-description description=album.description}}
+
+<button type="submit" class="btn btn-primary" {{action "submit"}} on="click">
+  Submit
+</button>
+<button class="btn btn-default" {{action "reset"}} on="click">
+  Cancel
+</button>
