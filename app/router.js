@@ -12,8 +12,9 @@ Router.map(function () {
   this.route('users');
   this.route('albums');
   this.route('album', { path: '/albums/:album_id' });
-  // this.route('list/edit', { path: '/lists/:list_id/edit' }),
   this.route('new-album');
+  this.route('edit-album', { path: '/edit-album/:album_id' });
+  // this.route('list/edit', { path: '/lists/:list_id/edit' }),
 });
 
 export default Router;
