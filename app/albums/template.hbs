@@ -1,6 +1,6 @@
 <div class="row albums-container">
   {{#each model as |album|}}
-    {{#link-to 'album'}}<h2>{{album.title}}</h2>{{/link-to}}
+    {{#link-to 'album' album}}<h2>{{album.title}}</h2>{{/link-to}}
     <!-- <h3>{{album.artist}}</h3>
     <p>{{album.description}}</p> -->
   {{/each}}
