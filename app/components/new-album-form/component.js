@@ -12,7 +12,7 @@ export default Ember.Component.extend({
 
    reset () {
      this.set('album', {});
-     this.sendAction('goToCollection');
+     this.sendAction('goToAlbums');
    },
  },
 });
