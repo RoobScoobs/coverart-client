@@ -11,9 +11,9 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('albums');
-  this.route('albums/create');
   // this.route('list', { path: '/lists/:list_id' }),
   // this.route('list/edit', { path: '/lists/:list_id/edit' }),
+  this.route('new-album');
 });
 
 export default Router;
