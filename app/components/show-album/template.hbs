@@ -2,6 +2,10 @@
 <h3>{{album.artist}}</h3>
 <p>{{album.description}}</p>
 
-{{#link-to 'edit-album' album class="btn btn-default"}}
+{{#link-to 'edit-album' album class="btn btn-xs"}}
     Edit Album
 {{/link-to}}
+
+<button class="btn btn-xs btn-danger" {{action "delete"}}>
+  Delete
+</button>
