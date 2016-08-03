@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    apiHost: 'https://cvrart.herokuapp.com/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,6 +21,9 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.baseURL = '/';
+    ENV.locationType = 'hash';
+    ENV.apiHost = 'https://cvrart.herokuapp.com/'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

@@ -1,7 +1,14 @@
 import Ember from 'ember';
 import ActiveModelAdapter from 'active-model-adapter';
+import AjaxService from 'ember-ajax/services/ajax';
+import ENV from 'ga-wdi-boston.ember-auth/config/environment';
+
+export default AjaxService.extend({
+  host: ENV.apiHost,
+});
 
 export default ActiveModelAdapter.extend({
+  host: ENV.apiHost,
   auth: Ember.inject.service(),
 
   headers: Ember.computed('auth.credentials.token', {
