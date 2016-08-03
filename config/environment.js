@@ -23,7 +23,7 @@ module.exports = function(environment) {
   if (environment === 'development') {
     ENV.baseURL = '/';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://cvrart.herokuapp.com/'
+    ENV.apiHost = 'https://cvrart.herokuapp.com/';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
