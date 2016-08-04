@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'coverart-client',
+    modulePrefix: 'ga-wdi-boston.ember-auth',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import ActiveModelAdapter from 'active-model-adapter';
-import ENV from 'coverart-client/config/environment';
+import ENV from 'ga-wdi-boston.ember-auth/config/environment';
 
 
 export default ActiveModelAdapter.extend({
