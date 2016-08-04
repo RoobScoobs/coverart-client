@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import AjaxService from 'ember-ajax/services/ajax';
-import ENV from 'ga-wdi-boston.ember-auth/config/environment';
+import ENV from 'coverart-client/config/environment';
 
 
 export default AjaxService.extend({
