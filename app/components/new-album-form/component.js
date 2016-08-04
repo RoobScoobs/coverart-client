@@ -8,7 +8,6 @@ export default Ember.Component.extend({
   actions: {
    submit () {
      this.sendAction('createAlbum', this.get('album'));
-     this.sendAction('goToAlbums');
    },
 
    reset () {
