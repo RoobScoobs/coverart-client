@@ -54,6 +54,11 @@ div.create-album {
   margin-left: 18%;
 }
 
+.edit-album-form {
+  width: 60%;
+  margin-left: 18%;
+}
+
 .toggle {
   margin: 4px;
   display: inline-block;
@@ -154,7 +159,16 @@ input.add:checked ~ .label-new-album {
 }
 
 button.submit {
-  background-image: linear-gradient(to bottom, #777777 0%, #363636 100%);  
+  background-image: linear-gradient(to bottom, #777777 0%, #363636 100%);
+  border-color: #ffffff;
+}
+
+button.btn-primary:hover, .btn-primary:focus {
+  background-color: #4a4a4a;
+}
+
+.edit-buttons {
+  margin-top: 30px;
 }
 
 h1 {
