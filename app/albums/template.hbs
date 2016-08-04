@@ -7,9 +7,25 @@
 </div>
 
 {{#link-to 'new-album'}}
-  <button class="btn btn-default">
+  <!-- <button class="btn btn-default new-album">
     Create New Album
-  </button>
+  </button> -->
+  <div class="container-add-album">
+    <div class="toggle">
+      <input type="checkbox" class="add">
+      <span class="button-add-album"></span>
+      <span class="label-new-album">+</span>
+    </div>
+  </div>
 {{/link-to}}
+
+
+<!-- <div class="container-add-album">
+  <div class="toggle">
+    <input type="checkbox" class="add">
+    <span class="button-add-album"></span>
+    <span class="label-new-album">+</span>
+  </div>
+</div> -->
 
 {{outlet}}
