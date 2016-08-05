@@ -1,2 +1,193 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+
+body {
+  max-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body.container-fluid {
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+div.background-image {
+  background: url('https://hd.unsplash.com/photo-1448485780098-7e0b78781fc1') repeat 0 0;
+  height: 100vh;
+  background-size: cover;
+  margin-top: -20px;
+}
+
+nav.navbar {
+  font-family: 'Slabo 27px', serif;
+}
+
+div.layout {
+ margin-left: 45px;
+}
+
+div.albums-container {
+  height: 90vh;
+  overflow-y: scroll;
+  padding: 50px 0 50px 20px;
+  margin-top: -20px;
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF);
+  background: linear-gradient(to left, #ECE9E6 , #FFFFFF);
+}
+
+div.create-album {
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #000000 , #434343);
+  background: linear-gradient(to left, #000000 , #434343);
+  height: 100vh;
+  margin-top: -20px;
+}
+
+.container-add-album {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 450px;
+  left: 28%;
+}
+
+.add-album-form {
+  width: 60%;
+  margin-left: 18%;
+}
+
+
+.toggle {
+  margin: 4px;
+  display: inline-block;
+}
+
+.toggle {
+  $size: 140px;
+  box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px 0 rgba(0,0,0,0.25);
+  border-radius: 8px;
+  background: #ccd0d4;
+  position: relative;
+  height: $size;
+  width: $size;
+}
+
+.toggle::before {
+  $size: 140px;
+  $radius: $size * 0.845;
+  $glow: $size * 0.125;
+  box-shadow: 0 0 $glow $glow / 2 #fff;
+  border-radius: $radius;
+  background: #fff;
+  position: absolute;
+  margin-left: ( $radius - $glow ) * -0.5;
+  margin-top: ( $radius - $glow ) * -0.5;
+  opacity: 0.2;
+  content: '';
+  height: $radius - $glow;
+  width: $radius - $glow;
+  left: 50%;
+  top: 50%;
+}
+
+.button-add-album {
+  $size: 140px;
+  $radius: $size * 0.688;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  filter: blur(1px);
+  transition: all 300ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  box-shadow: 0 15px 25px -4px rgba(0,0,0,0.5), inset 0 -3px 4px -1px rgba(0,0,0,0.2), 0 -10px 15px -1px rgba(255,255,255,0.6), inset 0 3px 4px -1px rgba(255,255,255,0.2), inset 0 0 5px 1px rgba(255,255,255,0.8), inset 0 20px 30px 0 rgba(255,255,255,0.2);
+  border-radius: $radius;
+  position: absolute;
+  background: #ccd0d4;
+  margin-left: $radius * -0.5;
+  margin-top: $radius * -0.5;
+  display: block;
+  height: $radius;
+  width: $radius;
+  left: 50%;
+  top: 50%;
+}
+
+.label-new-album {
+  $size: 140px;
+  transition: color 300ms ease-out;
+  text-shadow: 1px 1px 3px #ccd0d4, 0 0 0 rgba(0,0,0,0.8), 1px 1px 4px #fff;
+  line-height: $size - 1;
+  text-align: center;
+  position: absolute;
+  font-weight: 700;
+  font-size: 42px;
+  display: block;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  color: rgba(0,0,0,0.4);
+}
+
+input.add {
+  opacity: 0;
+  background: red;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+input.add:active ~ .button-add-album {
+  box-shadow: 0 15px 25px -4px rgba(0,0,0,0.4), inset 0 -8px 30px 1px rgba(255,255,255,0.9), 0 -10px 15px -1px rgba(255,255,255,0.6), inset 0 8px 25px 0 rgba(0,0,0,0.4), inset 0 0 10px 1px rgba(255,255,255,0.6);
+}
+
+input.add:active ~ .label-new-album {
+  font-size: 40px;
+  color: rgba(0,0,0,0.45);
+}
+
+input.add:checked ~ .button-add-album {
+  box-shadow: 0 15px 25px -4px rgba(0,0,0,0.4), inset 0 -8px 25px -1px rgba(255,255,255,0.9), 0 -10px 15px -1px rgba(255,255,255,0.6), inset 0 8px 20px 0 rgba(0,0,0,0.2), inset 0 0 5px 1px rgba(255,255,255,0.6);
+}
+
+input.add:checked ~ .label-new-album {
+  font-size: 40px;
+  color: rgba(0,0,0,0.4);
+}
+
+button.submit {
+  background-image: linear-gradient(to bottom, #777777 0%, #363636 100%);
+  border-color: #ffffff;
+}
+
+button.btn-primary:hover, .btn-primary:focus {
+  background-color: #4a4a4a;
+}
+
+.edit-buttons {
+  margin-top: 30px;
+}
+
+h1 {
+  color: #fff;
+  margin: 75px auto 0;
+  padding-left: 20px;
+  width: 25%;
+  line-height: 1.5em;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+a.ember-view {
+  text-decoration: none;
+  color: #000;
+}
