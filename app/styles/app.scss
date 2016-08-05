@@ -14,6 +14,13 @@ body.container-fluid {
   font-family: 'Raleway', sans-serif;
 }
 
+div.background-image {
+  background: url('https://hd.unsplash.com/photo-1448485780098-7e0b78781fc1') repeat 0 0;
+  height: 100vh;
+  background-size: cover;
+  margin-top: -20px;
+}
+
 nav.navbar {
   font-family: 'Slabo 27px', serif;
 }
@@ -23,14 +30,13 @@ div.layout {
 }
 
 div.albums-container {
-  height: 100vh;
+  height: 90vh;
   overflow-y: scroll;
   padding: 50px 0 50px 20px;
   margin-top: -20px;
   background: #ECE9E6;
   background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF);
   background: linear-gradient(to left, #ECE9E6 , #FFFFFF);
-
 }
 
 div.create-album {
@@ -54,10 +60,6 @@ div.create-album {
   margin-left: 18%;
 }
 
-.edit-album-form {
-  width: 60%;
-  margin-left: 18%;
-}
 
 .toggle {
   margin: 4px;
